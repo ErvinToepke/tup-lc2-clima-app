@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima APP</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clima</a></li>
+                <li><a href="add-city.html">Ciudad</a></li>
+                <li class="current-page"><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Ayuda</h2>
+        <p>Esta App te permite consultar el clima de una ciudad en particular utilizando la API
+            de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
+        <p>Para poder consultar el clima, primero debera <a href="./add-city.html">Agregar una ciudad</a> y luego
+            seleccionar la Ciudad en cuestión desde la página <a href="./index.html">Clima</a></p>
+        <section>
+            <form action="">
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="">
+                <br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="Mensaje">Mensaje:</label>                
+                <textarea name="Mensaje:" cols="40" rows="10" input type="text" minlength="10" id=""></textarea>
+                <br><br>
+
+                <button id="clear">Limpiar</button>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>

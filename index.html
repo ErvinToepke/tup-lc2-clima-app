@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima APP</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li class="current-page"><a href="index.html">Clima</a></li>
+                <li><a href="add-city.html">Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>El Clima Ahora</h2>
+        <section id="form-city-list">
+            <form action="#">
+                <select name="select" id="select">
+                    <option value="" disabled selected>Seleccionar ciudad</option>
+                    <option value="ROSARIO">Rosario</option>
+                    <option value="RAFAELA">Rafaela</option>
+                </select>
+                <button>Consultar</button>
+            </form>
+        </section>
+        <section id="section-weather-result">
+            <div class="card">
+                <h3>Ciudad</h3>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="map">
+                <p>Temperatura: #</p>
+                <p>Sensación térmica: #</p>
+                <p>Humedad: #</p>
+                <p>Velocidad del viento: #km/h</p>
+                <p>Presión: # P</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>
