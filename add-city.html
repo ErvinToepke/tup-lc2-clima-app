@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima APP</title>
     <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/add-city.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
 </head>
 
 <body>
     <header>
         <h1>
+            <img src="./css/img/1434804.png" alt="flaticon clima app">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -28,9 +30,23 @@
         <h2>Agregar Ciudad</h2>
         <section>
             <form action="#">
-                <label for="new-city">Ingrese la ciudad a agregar: </label>
-                <input type="text" id="new-city" name="new-city">
-                <button>Agregar</button>
+                <div class="flex-item">
+                    <label for="InsertarCiudad">Ingrese la ciudad a agregar:</label>
+                    <br>
+                    <input type="text" name="IgresarCiudad">
+                </div>
+                <div class="flex-item">
+                    <input type="button" value="Agregar" class="btn">
+                </div>
+                <div class="alert success">
+                    Ciudad agregada con exito
+                </div>
+                <div class="alert danger">
+                    Error: La ciudad ingresada no se encuetra en la API o se produjo un error al consultar 
+                </div>
+                <div class="alert warning">
+                    La ciudad ingresada ya se encuentra almacenada
+                </div>
             </form>
         </section>
     </main>
