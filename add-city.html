@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima APP</title>
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="./css/add-city.css">
+    <link rel="stylesheet" href="./css/pages/add-city.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1434/1434804.png">
+    <link rel="icon" href="./img/1434804.png">
 </head>
 
 <body>
     <header>
         <h1>
-            <img src="./css/img/1434804.png" alt="flaticon clima app">
+            <img src="./img/1434804.png" alt="flaticon clima app">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -30,21 +30,21 @@
         <h2>Agregar Ciudad</h2>
         <section>
             <form action="#">
-                <div class="flex-item">
+                <div class="flex-item" >
                     <label for="InsertarCiudad">Ingrese la ciudad a agregar:</label>
                     <br>
-                    <input type="text" name="IgresarCiudad">
+                    <input type="text" name="IgresarCiudad" id="addCity">
                 </div>
                 <div class="flex-item">
-                    <input type="button" value="Agregar" class="btn">
+                    <input type="button" value="Agregar" class="btn" id="btnAdd" onclick="agregarCiudad()">
                 </div>
-                <div class="alert success">
+                <div class="success" id="success">
                     Ciudad agregada con exito
                 </div>
-                <div class="alert danger">
+                <div class="danger" id="danger">
                     Error: La ciudad ingresada no se encuetra en la API o se produjo un error al consultar 
                 </div>
-                <div class="alert warning">
+                <div class="warning" id="warning">
                     La ciudad ingresada ya se encuentra almacenada
                 </div>
             </form>
@@ -56,5 +56,5 @@
         </p>
     </footer>
 </body>
-
+<script src="./js/pages/add-city.js"></script>
 </html>

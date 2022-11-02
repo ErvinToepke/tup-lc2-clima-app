@@ -1,0 +1,31 @@
+form{
+    width: 400%;
+    display: none;
+}
+
+main section form .flex-item > input{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.danger{
+    background-color: #dc3545;    
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+.success{
+    background-color: #28a745;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+.warning{
+    background-color: #ffc107;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    display: none;
+}
